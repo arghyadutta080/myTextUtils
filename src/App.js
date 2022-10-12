@@ -37,7 +37,7 @@ function App() {
     <>
       <Navbar title="myTextUtils" about="About Us" mode={mode} modechange={toggleMode} />
       <Alerts alertMsg={alert} />
-      <div className="container mt-5">
+      <div className="container mt-3 mb-3">
         <TextForm heading="Write your text here" bodymode={mode} showAlert={showAlert} />
       </div>
     </>
