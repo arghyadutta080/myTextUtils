@@ -99,36 +99,38 @@ export default function TextForm(props) {
                   }
               }
             ></textarea>
-            <input
-              className="btn btn-primary mt-3 mx-2 mb-3"
-              type="submit"
-              value="Convert To UpperCase"
-              onClick={clickonbutton}
-            ></input>
-            <input
-              className="btn btn-primary mt-3 mx-1 mb-3"
-              type="submit"
-              value="Convert To LowerCase"
-              onClick={clickonbutton2}
-            ></input>
-            <input
-              className="btn btn-primary mt-3 mx-1 mb-3"
-              type="submit"
-              value="Copy Text"
-              onClick={copyText}
-            ></input>
-            <input
-              className="btn btn-primary mt-3 mx-1 mb-3"
-              type="submit"
-              value="Remove Extra Space"
-              onClick={remove}
-            ></input>
-            <input
-              className="btn btn-danger mt-3 mx-1 mb-3"
-              type="submit"
-              value="Clear Text"
-              onClick={clear}
-            ></input>
+            <div className="mt-3 mb-3 d-flex align-items-center justify-content-center flex-wrap">
+              <input
+                className="btn btn-primary btn-sm mb-2 ms-2 me-1 "
+                type="submit"
+                value="UPPERCASE"
+                onClick={clickonbutton}
+              ></input>
+              <input
+                className="btn btn-primary btn-sm mb-2 mx-1 "
+                type="submit"
+                value="lowercase"
+                onClick={clickonbutton2}
+              ></input>
+              <input
+                className="btn btn-primary btn-sm mb-2 mx-1 "
+                type="submit"
+                value="Copy"
+                onClick={copyText}
+              ></input>
+              <input
+                className="btn btn-primary btn-sm ms-2 mb-2 mx-1 "
+                type="submit"
+                value="Remove Extra Spaces"
+                onClick={remove}
+              ></input>
+              <input
+                className="btn btn-danger btn-sm mx-1 mb-2 "
+                type="submit"
+                value="Clear"
+                onClick={clear}
+              ></input>
+            </div>
           </div>
           <div
             className="mt-5 mx-3"
